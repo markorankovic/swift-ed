@@ -1,5 +1,3 @@
-
-
 extension Sequence {
     
     public func map2<R>(_ transformation: (Element) -> R) -> [R] {
@@ -25,5 +23,9 @@ extension Sequence {
         }
         return result
     }
-    
 }
+
+print("sum of first 100 integers:", (1...100).reduce2(0, +))
+
+print("✅")
+

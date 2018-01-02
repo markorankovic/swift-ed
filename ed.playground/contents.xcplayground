@@ -3,5 +3,7 @@
     <pages>
         <page name='dictionary'/>
         <page name='switch and match operator'/>
+        <page name='sequences'/>
+        <page name='collections'/>
     </pages>
 </playground>

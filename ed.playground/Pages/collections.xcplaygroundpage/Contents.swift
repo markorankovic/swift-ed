@@ -1,5 +1,4 @@
 
-
 extension Collection where IndexDistance == Int {
     
     public func map2<R>(_ transformation: (Element) -> R) -> [R] {
@@ -19,5 +18,18 @@ extension Collection where IndexDistance == Int {
         }
         return newArr
     }
-    
 }
+
+extension Int {
+    var isEven: Bool { return self % 2 == 0 }
+}
+
+print(
+    (1...9).filter2{ $0.isEven }
+)
+
+print(
+    (1...9).map2{ $0.isEven }
+)
+
+print("✅")
