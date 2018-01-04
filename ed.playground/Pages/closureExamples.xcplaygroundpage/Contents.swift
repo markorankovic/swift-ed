@@ -36,12 +36,50 @@ extension Sequence {
 }
 
 numbers.map2 {
-    (a: Int) -> Int in return a * 2
+    (a: Int) -> Int in a * 2
 }
 
 // Or
 
 numbers.map2 { $0 * 2 }
+
+
+
+
+struct A {
+    func method(_ value: Int) -> Int { return value * value }
+}
+
+struct B {
+    let property: (Int) -> Int = { value in value * value }
+}
+
+do {
+    let (a, b) = (A(), B())
+    
+    a.method(5)
+    b.property(5)
+    
+    let fa = a.method
+    fa(5)
+    
+    let fb = b.property
+    fb(5)
+}
+do {
+    let a = A()
+    let fA = A.method
+    let fa = fA(a)
+    fa(5)
+}
+do {
+    let b = B()
+    let fB = \B.property
+    let fb = b[keyPath: fB]
+    fb(5)
+}
+
+
 
 
 
