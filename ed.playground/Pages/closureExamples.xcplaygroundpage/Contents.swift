@@ -81,5 +81,17 @@ do {
 
 
 
+var listOfClosures: [() -> Int] = []
+
+func addClosure(_ clo: @escaping () -> Int) {
+    listOfClosures.append(clo)
+}
+
+addClosure({ print("Working!"); return 1 })
+
+listOfClosures[0]()
+
+
+
 
 
