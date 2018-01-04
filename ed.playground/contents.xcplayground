@@ -7,5 +7,6 @@
         <page name='Contents'/>
         <page name='sequences'/>
         <page name='functionExp'/>
+        <page name='closureExamples'/>
     </pages>
 </playground>
