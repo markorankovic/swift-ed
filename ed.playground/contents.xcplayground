@@ -8,5 +8,6 @@
         <page name='sequences'/>
         <page name='functionExp'/>
         <page name='closureExamples'/>
+        <page name='enumStuff'/>
     </pages>
 </playground>

@@ -81,6 +81,7 @@ do {
 
 
 
+
 var listOfClosures: [() -> Int] = []
 
 func addClosure(_ clo: @escaping () -> Int) {
@@ -91,6 +92,25 @@ addClosure({ print("Working!"); return 1 })
 
 listOfClosures[0]()
 
+class Obj {
+    let id: Int
+    init(id: Int){ self.id = id }
+    deinit {
+        print(#function, type(of: self), id)
+    }
+    func method() -> Int { return id }
+}
+
+var obj1: Obj? = .init(id: 1)
+var obj2: Obj? = .init(id: 2)
+
+addClosure(obj1!.method)
+
+obj1 = nil
+obj2 = nil
+
+// prints only "deinit Obj 2"
+// why?
 
 
 
