@@ -4,7 +4,7 @@
 
 /*:
 ## Closures are blocks of code
- As well as simply being blocks of code, closures also have the posibility to be stored, typed and last but not least passed around through functions.
+ As well as simply being blocks of code, closures also have the posibility to be stored, typed and last but not least passed around through functions. The difference between a closure and the *do* block below is that a closure can be stored, and evaluate to a value.
  */
 do {
     let a = 1
@@ -55,4 +55,20 @@ func evaluateOperands(_ a: Int, _ b: Int) -> Int {
 
 evaluateOperands(2, 3)
 
+//: ## Closure Expressions
+/*:
+ Closure expressions is the last form of a closure, which is made purely within the brackets. The type of values that the closure will take and the body of the closure is separated by the *in* keyword.
+ */
+/*:
+ Observing the two *equals* functions, we see that the function itself is really defined by the closure. The only difference between a function and a closure expression is that a function has a name to refer to the closure. Both however are two forms of closures.
+ */
+/*
+ The difference between *equals1* and *equals2* is that the closure of *equals1* has it's parameters defined from within, where as the closure of *equals2* has the parameters defined outside of the closure, but the closure can still capture the arguments since the label has the parameters and return type specified.
+ */
+
+let equals1 = { (a: Int, b: Int) -> Bool in return a == b  }
+equals1(5, 10)
+
+let equals2: (Int, Int) -> Bool = { return $0 == $1 }
+equals2(5, 10)
 
