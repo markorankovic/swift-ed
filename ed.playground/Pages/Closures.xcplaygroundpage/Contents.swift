@@ -40,7 +40,7 @@ extension Array {
 
 [1, 2, 3, 4, 5].getReversed()
 
-//: ## Nested functions is an instance of a closure
+//: ## Nested functions as closures
 /*:
  A function inside a function is one case of a closure because a block of code to be executed at specified times and able to capture values from outside that code is enclosed within the outer function.
  Constants *a* and *b* are defined from outside the block in function *mult*, yet *mult* still has access to them.
@@ -62,7 +62,7 @@ evaluateOperands(2, 3)
 /*:
  Observing the two *equals* functions, we see that the function itself is really defined by the closure. The only difference between a function and a closure expression is that a function has a name to refer to the closure. Both however are two forms of closures.
  */
-/*
+/*:
  The difference between *equals1* and *equals2* is that the closure of *equals1* has it's parameters defined from within, where as the closure of *equals2* has the parameters defined outside of the closure, but the closure can still capture the arguments since the label has the parameters and return type specified.
  */
 
