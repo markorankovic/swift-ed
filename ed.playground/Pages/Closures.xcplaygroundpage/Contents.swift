@@ -66,9 +66,48 @@ evaluateOperands(2, 3)
  The difference between *equals1* and *equals2* is that the closure of *equals1* has it's parameters defined from within, where as the closure of *equals2* has the parameters defined outside of the closure, but the closure can still capture the arguments since the label has the parameters and return type specified.
  */
 
-let equals1 = { (a: Int, b: Int) -> Bool in return a == b  }
+let equals1 = { (a: Int, b: Int) in return a == b  }
 equals1(5, 10)
 
-let equals2: (Int, Int) -> Bool = { return $0 == $1 }
+let equals2: (Int, Int) -> Bool = { $0 == $1 }
 equals2(5, 10)
+
+
+/*:
+ ## Trailing Closures
+ If the closure is too long to pass as an argument to a function inline, often the solution unless the closure is not the last appearing argument is to add the closure outside of the parenthesis.
+ */
+
+func doSomething(_ action: () -> ()) {
+    action()
+}
+
+doSomething({ print("Done") })
+
+doSomething {
+    print("Done")
+}
+
+/*:
+ ## Escaping closures
+ At times one would find that a closure may take too long to complete executing. Therefore, a more asynchronous way of executing a closure is for a function to take that closure, and then put it into an variable for later execution. Another thing that makes escaped closures different to the usual is that escaped closures require *self* to be explicitly included to refer to outside variables that are local.
+ */
+
+var closures: [() -> (Int)] = []
+
+func takeClosureWithEscaping(_ closure: @escaping () -> (Int)) {
+    closures.append(closure)
+}
+
+func takeClosureWithoutEscaping(_ closure: () -> (Int)) -> Int {
+    return closure()
+}
+
+func executeTheFunctionsAbove() {
+    print(takeClosureWithoutEscaping{ 5 })
+    takeClosureWithEscaping{ 5 }
+    print(closures[0]())
+}
+
+executeTheFunctionsAbove()
 
