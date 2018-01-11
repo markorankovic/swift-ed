@@ -11,5 +11,6 @@
         <page name='enumStuff'/>
         <page name='Closures'/>
         <page name='classesandstructures'/>
+        <page name='properties'/>
     </pages>
 </playground>

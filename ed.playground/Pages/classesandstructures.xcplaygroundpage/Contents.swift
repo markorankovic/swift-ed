@@ -82,46 +82,114 @@ struct Hoodie {
 }
 
 
-struct Card {
+struct Card: Hashable {
+    
     let suit: Suit
-    let faceValue: FaceValue
-    static func ==(lhs: Card, rhs: Card) -> Bool {
-        return lhs.suit.rawValue == rhs.suit.rawValue && lhs.faceValue.rawValue == rhs.faceValue.rawValue
-    }
-    static func <(lhs: Card, rhs: Card) -> Bool {
-        return lhs.faceValue.rawValue < rhs.faceValue.rawValue
-    }
-    static func >(lhs: Card, rhs: Card) -> Bool {
-        return lhs.faceValue.rawValue > rhs.faceValue.rawValue
+    let rank: Rank
+    
+    let hashValue: Int
+    
+    init(_ rank: Rank, of suit: Suit) {
+        (self.rank, self.suit) = (rank, suit)
+        hashValue = rank.hashValue ^ suit.hashValue
     }
 }
 
-enum Suit: String {
-    case Hearts = "Hearts"
-    case Diamonds = "Diamonds"
-    case Clovers = "Clovers"
-    case Spades = "Spades"
+extension Card {
+    
+    enum Suit: String {
+        case hearts = "♥︎"
+        case diamonds = "♦︎"
+        case clovers = "♣︎"
+        case spades = "♠︎"
+    }
+    
+    enum Rank: Int {
+        case ace = 1, two, three, four, five, six, seven, eight, nine, ten
+        case jack = 12, queen, king
+    }
 }
 
-enum FaceValue: Int {
-    case One = 1
-    case Two = 2
-    case Three = 3
-    case Four = 4
-    case Five = 5
-    case Six = 6
-    case Seven = 7
-    case Eight = 8
-    case Nine = 9
-    case Ten = 10
-    case Ace = 11
-    case Jack = 12
-    case Queen = 13
-    case King = 14
+// MARK:- Conformances
+
+extension Card: Equatable {
+    
+    public static func == (lhs: Card, rhs: Card) -> Bool {
+        return lhs.rank == rhs.rank
+            && lhs.suit == rhs.suit
+    }
 }
 
-let cardA = Card(suit: .Spades, faceValue: .King)
-let cardB = Card(suit: .Diamonds, faceValue: .Ace)
-cardA == cardB
-cardA > cardB
+extension Card: CustomStringConvertible {
+    
+    var description: String {
+        return "\(rank)\(suit)"
+    }
+}
+
+extension Card.Suit: Equatable {
+    
+    public static func == (lhs: Card.Suit, rhs: Card.Suit) -> Bool {
+        return lhs.rawValue == rhs.rawValue
+    }
+}
+
+extension Card.Suit: CustomStringConvertible {
+    
+    var description: String {
+        return "\(rawValue)"
+    }
+}
+
+extension Card.Rank: CustomStringConvertible {
+    
+    var description: String {
+        switch self {
+        case .ace: return "A"
+        case .queen: return "Q"
+        case .king: return "K"
+        default: return "\(rawValue)"
+        }
+    }
+}
+
+// MARK:- Random
+
+import Darwin
+
+protocol Random {
+    static var random: Self { get }
+}
+
+extension Card {
+    
+    static var random: Card {
+        return .init(.random, of: .random)
+    }
+}
+
+extension Card.Suit: Random {
+    
+    static let all: [Card.Suit] = [.hearts, .diamonds, .clovers, .spades]
+    
+    static var random: Card.Suit {
+        return all[Int(arc4random_uniform(UInt32(all.count)))]
+    }
+}
+
+extension Card.Rank: Random {
+    
+    static let all: [Card.Rank] = [
+        .ace, .two, .three, .four, .five, .six, .seven,
+        .eight, .nine, .ten, .jack, .queen, .king
+    ]
+    
+    static var random: Card.Rank {
+        return all[Int(arc4random_uniform(UInt32(all.count)))]
+    }
+}
+
+// MARK:- Examples
+
+print((1...10).map{ _ in Card.random })
 
