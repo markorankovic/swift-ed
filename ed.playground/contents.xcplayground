@@ -12,5 +12,7 @@
         <page name='Closures'/>
         <page name='classesandstructures'/>
         <page name='properties'/>
+        <page name='puzzle2'/>
+        <page name='play1'/>
     </pages>
 </playground>

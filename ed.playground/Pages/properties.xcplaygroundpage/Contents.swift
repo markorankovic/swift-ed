@@ -84,6 +84,20 @@ b.computedProp = 18
 b.computedProp
 
 
+struct Mutation {
+    var prop: Int = 0
+    mutating func changeProp() {
+        self.prop = 10
+    }
+}
+
+var m = Mutation()
+m.prop
+m.changeProp()
+//m.prop = 10
+m.prop
+
+
 
 
 
