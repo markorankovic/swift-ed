@@ -1,43 +1,75 @@
-
-
-enum Thing: String {
-    case solid
-    case liquid
-    case gas
+struct Board<Element> {
+    
+    let separator: String
+    
+    var rows: Int { return array.count }
+    var cols: Int { return array.first?.count ?? 0 }
+    
+    private var array: [[Element]]
+    
+    init(cols: Int, rows: Int, element: Element, separator: String = " ") {
+        self.separator = separator
+        self.array = Array(
+            repeating: Array(repeating: element, count: cols),
+            count: rows
+        )
+    }
 }
 
-class Board<T>: CustomStringConvertible {
+extension Board {
     
-    var rows = 0, cols: Int = 0
-    var arr: [[T]]
-    
-    init(cols: Int, rows: Int, fillValue: T) {
-        self.cols = cols
-        self.rows = rows
-        self.arr = Array(repeating: Array(repeating: fillValue, count: cols), count: rows)
+    subscript(row: Int, col: Int) -> Element {
+        get {
+            return array[row][col]
+        }
+        set {
+            array[row][col] = newValue
+        }
     }
+    
+    func paste(over other: Board, at row: Int, _ col: Int) -> Board {
+        guard row < other.rows && col < other.cols else {
+            return other
+        }
+        var other = other
+        for r in row ..< min(row + rows, other.rows) {
+            for c in col ..< min(col + cols, other.cols) {
+                other[r, c] = self[r - row, c - col]
+            }
+        }
+        return other
+    }
+}
+
+extension Board: CustomStringConvertible {
     
     var description: String {
-        var result = ""
-        for i in 0..<arr.count {
-            result.append(arr[i].map{ "\($0)" }.joined(separator: " "))
-            result.append("\n")
-        }
-        return result
+        return array.map{ $0.map{ "\($0)" }.joined(separator: separator) }.joined(separator: "\n")
     }
     
 }
 
-let board = Board(cols: 10, rows: 10, fillValue: Thing.solid)
+let board = Board(cols: 6, rows: 10, element: Character("•"))
+let board2 = Board(cols: 4, rows: 2, element: Character("?"))
+let board3 = board2.paste(over: board, at: 3, 3)
+print(board3)
 
-print(board)
 
-class CharBoard: Board<Character> {
-    
-}
 
-let charBoard = CharBoard(cols: 10, rows: 10, fillValue: Character("X"))
 
-print(charBoard)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

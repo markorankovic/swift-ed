@@ -14,5 +14,10 @@
         <page name='properties'/>
         <page name='puzzle2'/>
         <page name='play1'/>
+        <page name='subscript'/>
+        <page name='Inheritance'/>
+        <page name='initialization'/>
+        <page name='optionals'/>
+        <page name='deinitialization'/>
     </pages>
 </playground>
