@@ -19,5 +19,6 @@
         <page name='initialization'/>
         <page name='optionals'/>
         <page name='deinitialization'/>
+        <page name='optionalChaining'/>
     </pages>
 </playground>
