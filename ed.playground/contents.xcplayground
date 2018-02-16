@@ -20,5 +20,10 @@
         <page name='optionals'/>
         <page name='deinitialization'/>
         <page name='optionalChaining'/>
+        <page name='errorHandling'/>
+        <page name='typeCasting'/>
+        <page name='protocols'/>
+        <page name='generics'/>
+        <page name='arc'/>
     </pages>
 </playground>
