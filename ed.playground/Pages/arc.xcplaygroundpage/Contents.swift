@@ -208,12 +208,22 @@ class Doer {
 }
 
 var doer: Doer? = Doer(num: 10)
-doer?.act
-
 doer = nil
 
 //: In the above case the closure act is lazy because it will not be in use until being accessed for the first time, which wouldn't occur before initialization. Thus, the use of self can still be used to refer to other properties.
 //: When the act closure takes outside properties, a capture list is used to specify what kind of reference will be made to the class instance carrying those properties, which in this case will be an unowned reference to self. This way when deinitializing the class, the closure also lets go and both are freed from the memory.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -25,5 +25,10 @@
         <page name='protocols'/>
         <page name='generics'/>
         <page name='arc'/>
+        <page name='memorySafety'/>
+        <page name='captureLists'/>
+        <page name='taxationOfHealthCare'/>
+        <page name='advancedOperators'/>
+        <page name='stride&amp;Zip'/>
     </pages>
 </playground>
