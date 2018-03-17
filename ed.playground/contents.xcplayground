@@ -29,6 +29,8 @@
         <page name='captureLists'/>
         <page name='taxationOfHealthCare'/>
         <page name='advancedOperators'/>
-        <page name='stride&amp;Zip'/>
+        <page name='smoothingLines'/>
+        <page name='skMeltdown1'/>
+        <page name='skMeltdown2'/>
     </pages>
 </playground>

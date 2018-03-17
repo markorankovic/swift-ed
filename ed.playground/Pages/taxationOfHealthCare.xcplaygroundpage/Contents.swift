@@ -76,11 +76,10 @@ enum Surgery {
         
 }
     
-    
 
 struct Person {
     
-    enum Organ {
+    enum Organ: String {
         
         case brain
         case heart
@@ -107,11 +106,7 @@ struct Person {
     enum MedicalCondition {
         
         enum Degree: Int {
-            case one = 1
-            case two = 2
-            case three = 3
-            case four = 4
-            case five = 5
+            case zero, one, two, three, four, five
         }
         
         case cancer(Organ, Degree)
@@ -145,18 +140,23 @@ struct Person {
     
 }
 
+Person.Organ(rawValue: "brain")
 
 
-let john = Person(name: "John",
-                  income: 81000,
-                  healthcareTax: 0.2,
-                  yearsOfWork: 50,
-                           historyOfMedicalConditions: [.heartAttack,
-                                                        .stroke,
-                                                        .cancer(.lungs, .four),
-                                                        .injury(.back, .five),
-                                                        .flu(.three),
-                                                        .general])
+let john = Person(
+    name: "John",
+    income: 81000,
+    healthcareTax: 0.18,
+    yearsOfWork: 50,
+    historyOfMedicalConditions: [
+        .heartAttack,
+        .stroke,
+        .cancer(.lungs, .four),
+        .injury(.back, .five),
+        .flu(.three),
+        .general
+    ]
+)
 john.totalPriceForAllTreatment
 john.totalMoneyPaidFromTaxes
 

@@ -1,54 +1,47 @@
+import Darwin
 
-
-import Foundation
-
-let numbers = Array(stride(from: 0, to: 10, by: 0.1).map{ _ in arc4random_uniform(10) })
-
-
-extension Array {
-    
-    func getWindow(index: Int, by: Int) -> [Element] {
-        
-        var window: [Element] = []
-        
-        var lowerBound: Int = index < index + by ? index + 1 : index + by
-        
-        if lowerBound >= self.count { return window }
-        
-        var upperBound: Int = index > index + by ? index - 1 : index + by
-        
-        lowerBound = lowerBound < 0 ? 0 : lowerBound
-        upperBound = upperBound >= self.count ? self.count - 1 : upperBound
-        
-        for i in lowerBound...upperBound {
-            window.append(self[i])
-        }
-        
-        return window
-        
+extension Int {
+    func clamped(to range: CountableRange<Int>) -> Int {
+        return Swift.min(range.upperBound - 1, Swift.max(range.lowerBound, self))
     }
-    
 }
 
-extension Array where Element: FixedWidthInteger {
+extension Collection where Indices == CountableRange<Int> {
+    
+    func elements(before index: Int, maxCount: Int) -> [Element] {
+        return elements(after: index, maxCount: -maxCount)
+    }
 
-    func avgAroundElement(element: Element, index: Int, radius: Int) -> Element {
-        let leftWindow: [Element] = getWindow(index: index, by: -radius)
-        let rightWindow: [Element] = getWindow(index: index, by: radius)
-        let total = leftWindow.reduce(0){ $0 + $1 } + element + rightWindow.reduce(0){ $0 + $1 }
+    func elements(after index: Int, maxCount: Int) -> [Element] {
+        let lowerBound = (maxCount > 0 ? index + 1 : index + maxCount).clamped(to: indices)
+        let upperBound = (maxCount < 0 ? index - 1 : index + maxCount).clamped(to: indices)
+        return lowerBound < upperBound ? Array(self[lowerBound ... upperBound]) : []
+    }
+}
+
+extension Collection where Indices == CountableRange<Int>, Element: FloatingPoint {
+
+    func averageAround(index: Int, radius: Int) -> Element {
+        let leftWindow = elements(before: index, maxCount: radius)
+        let rightWindow = elements(after: index, maxCount: radius)
+        let total = leftWindow.reduce(0, +) + self[index] + rightWindow.reduce(0, +)
         return total / Element(leftWindow.count + rightWindow.count + 1)
     }
-
 }
 
-// Below carries out the smoothing process for the points
+var a = Array(stride(from: 0, to: 10, by: 0.05).map{ _ in Double(arc4random_uniform(10)) })
 
-let radius = 5
-var index = 0
-numbers.map { (e: UInt32) -> UInt32 in
-    index += 1
-    return numbers.avgAroundElement(element: e, index: index, radius: 5)
-}
+a = a.indices.map { i in a.averageAround(index: i, radius: 5) }
+a = a.indices.map { i in a.averageAround(index: i, radius: 5) }
+a = a.indices.map { i in a.averageAround(index: i, radius: 5) }
+a = a.indices.map { i in a.averageAround(index: i, radius: 5) }
+a = a.indices.map { i in a.averageAround(index: i, radius: 5) }
+a = a.indices.map { i in a.averageAround(index: i, radius: 5) }
+
+
+
+
+
 
 
 

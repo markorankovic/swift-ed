@@ -3,57 +3,127 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/stride&amp;Zip.xcplaygroundpage#CharacterRangeLen=1145&amp;CharacterRangeLoc=34&amp;EndingColumnNumber=50&amp;EndingLineNumber=38&amp;StartingColumnNumber=13&amp;StartingLineNumber=4&amp;Timestamp=542134582.239593"
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=1332&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=7&amp;EndingLineNumber=34&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=542152032.807476"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/stride&amp;Zip.xcplaygroundpage#CharacterRangeLen=1072&amp;CharacterRangeLoc=107&amp;EndingColumnNumber=50&amp;EndingLineNumber=38&amp;StartingColumnNumber=86&amp;StartingLineNumber=4&amp;Timestamp=542134582.2397209"
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=1332&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=7&amp;EndingLineNumber=34&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=542152032.807652"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/stride&amp;Zip.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=107&amp;EndingColumnNumber=86&amp;EndingLineNumber=4&amp;StartingColumnNumber=86&amp;StartingLineNumber=4&amp;Timestamp=542134582.239815"
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=236&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=57&amp;EndingLineNumber=8&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=542152032.807781"
          lockedSize = "{242, 220}"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/stride&amp;Zip.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=107&amp;EndingColumnNumber=86&amp;EndingLineNumber=4&amp;StartingColumnNumber=86&amp;StartingLineNumber=4&amp;Timestamp=542134582.23991"
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=236&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=57&amp;EndingLineNumber=8&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=542152032.807911"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/stride&amp;Zip.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=107&amp;EndingColumnNumber=86&amp;EndingLineNumber=4&amp;StartingColumnNumber=86&amp;StartingLineNumber=4&amp;Timestamp=542134582.240039"
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=236&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=57&amp;EndingLineNumber=8&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=542152032.808033"
          lockedSize = "{179, 218}"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/stride&amp;Zip.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=107&amp;EndingColumnNumber=86&amp;EndingLineNumber=4&amp;StartingColumnNumber=86&amp;StartingLineNumber=4&amp;Timestamp=542134582.240133"
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=236&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=57&amp;EndingLineNumber=8&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=542152032.808158"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/stride&amp;Zip.xcplaygroundpage#CharacterRangeLen=22&amp;CharacterRangeLoc=81&amp;EndingColumnNumber=82&amp;EndingLineNumber=4&amp;StartingColumnNumber=60&amp;StartingLineNumber=4&amp;Timestamp=542134582.24022"
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=236&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=57&amp;EndingLineNumber=8&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=542152032.808273"
          lockedSize = "{584, 166}"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/stride&amp;Zip.xcplaygroundpage#CharacterRangeLen=22&amp;CharacterRangeLoc=83&amp;EndingColumnNumber=84&amp;EndingLineNumber=4&amp;StartingColumnNumber=62&amp;StartingLineNumber=4&amp;Timestamp=542134582.240308"
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=236&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=57&amp;EndingLineNumber=8&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=542152032.8083971"
          lockedSize = "{738, 172}"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/stride&amp;Zip.xcplaygroundpage#CharacterRangeLen=22&amp;CharacterRangeLoc=85&amp;EndingColumnNumber=86&amp;EndingLineNumber=4&amp;StartingColumnNumber=64&amp;StartingLineNumber=4&amp;Timestamp=542134582.240399"
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=236&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=57&amp;EndingLineNumber=8&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=542152032.808517"
          lockedSize = "{750, 155}"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/stride&amp;Zip.xcplaygroundpage#CharacterRangeLen=60&amp;CharacterRangeLoc=1366&amp;EndingColumnNumber=72&amp;EndingLineNumber=49&amp;StartingColumnNumber=12&amp;StartingLineNumber=49&amp;Timestamp=542134582.2404881"
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=30&amp;CharacterRangeLoc=1226&amp;EndingColumnNumber=88&amp;EndingLineNumber=31&amp;StartingColumnNumber=58&amp;StartingLineNumber=31&amp;Timestamp=542152032.808652"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=1326&amp;EndingColumnNumber=1&amp;EndingLineNumber=34&amp;StartingColumnNumber=1&amp;StartingLineNumber=34&amp;Timestamp=542152032.808763"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=1326&amp;EndingColumnNumber=1&amp;EndingLineNumber=34&amp;StartingColumnNumber=1&amp;StartingLineNumber=34&amp;Timestamp=542152032.808865"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=1326&amp;EndingColumnNumber=1&amp;EndingLineNumber=34&amp;StartingColumnNumber=1&amp;StartingLineNumber=34&amp;Timestamp=542152032.808966"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=1326&amp;EndingColumnNumber=1&amp;EndingLineNumber=34&amp;StartingColumnNumber=1&amp;StartingLineNumber=34&amp;Timestamp=542152032.809067"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=1326&amp;EndingColumnNumber=1&amp;EndingLineNumber=34&amp;StartingColumnNumber=1&amp;StartingLineNumber=34&amp;Timestamp=542152032.809167"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=1326&amp;EndingColumnNumber=1&amp;EndingLineNumber=34&amp;StartingColumnNumber=1&amp;StartingLineNumber=34&amp;Timestamp=542152032.809266"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=64&amp;CharacterRangeLoc=1261&amp;EndingColumnNumber=0&amp;EndingLineNumber=34&amp;StartingColumnNumber=0&amp;StartingLineNumber=33&amp;Timestamp=542152032.809368"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=36&amp;CharacterRangeLoc=1287&amp;EndingColumnNumber=62&amp;EndingLineNumber=33&amp;StartingColumnNumber=26&amp;StartingLineNumber=33&amp;Timestamp=542152032.809468"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=36&amp;CharacterRangeLoc=1351&amp;EndingColumnNumber=62&amp;EndingLineNumber=34&amp;StartingColumnNumber=26&amp;StartingLineNumber=34&amp;Timestamp=542152032.809572"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=36&amp;CharacterRangeLoc=1415&amp;EndingColumnNumber=62&amp;EndingLineNumber=35&amp;StartingColumnNumber=26&amp;StartingLineNumber=35&amp;Timestamp=542152032.809672"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=36&amp;CharacterRangeLoc=1479&amp;EndingColumnNumber=62&amp;EndingLineNumber=36&amp;StartingColumnNumber=26&amp;StartingLineNumber=36&amp;Timestamp=542152032.809773"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=36&amp;CharacterRangeLoc=1543&amp;EndingColumnNumber=62&amp;EndingLineNumber=37&amp;StartingColumnNumber=26&amp;StartingLineNumber=37&amp;Timestamp=542152032.809873"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=36&amp;CharacterRangeLoc=1607&amp;EndingColumnNumber=62&amp;EndingLineNumber=38&amp;StartingColumnNumber=26&amp;StartingLineNumber=38&amp;Timestamp=542152032.809973"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/marko/Documents/GitHub/swift-ed/ed.playground/Pages/smoothingLines.xcplaygroundpage#CharacterRangeLen=30&amp;CharacterRangeLoc=1227&amp;EndingColumnNumber=89&amp;EndingLineNumber=31&amp;StartingColumnNumber=59&amp;StartingLineNumber=31&amp;Timestamp=542152032.8100719"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
